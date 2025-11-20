@@ -1,42 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Charset & Basic Meta -->
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+
+    <!-- Primary Meta Tags -->
+    <title>SpiceRoute Kitchen | Authentic Indian Restaurant & Family Dining</title>
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="SpiceRoute Kitchen is an authentic Indian restaurant offering flavorful curries, tandoori specials, biryanis, and street-style snacks in a cozy family-friendly ambiance."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta
+      name="keywords"
+      content="SpiceRoute Kitchen, Indian restaurant, Indian food, tandoori, biryani, curry, family restaurant, Indian cuisine, restaurant near me"
+    />
+    <meta name="theme-color" content="#b45309" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>SpiceRoute Kitchen – Authentic Indian Restaurant</title>
+    <!-- Canonical URL (change to your real domain) -->
+    <link rel="canonical" href="https://www.spiceroutekitchen.vercel.app/" />
+
+    <!-- Favicon & App Icons -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="SpiceRoute Kitchen | Authentic Indian Restaurant"
+    />
+    <meta
+      property="og:description"
+      content="Enjoy rich Indian flavors, fresh ingredients, and warm hospitality at SpiceRoute Kitchen. Perfect for family dinners, friends, and celebrations."
+    />
+    <!-- Change this image path to your real social preview image -->
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+    <meta property="og:url" content="https://www.spiceroutekitchen-demo.com/" />
+    <meta property="og:site_name" content="SpiceRoute Kitchen" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SpiceRoute Kitchen – Authentic Indian Restaurant" />
+    <meta
+      name="twitter:description"
+      content="Traditional Indian dishes, aromatic spices, and a cozy dining experience at SpiceRoute Kitchen."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/og-image.jpg" />
+
+    <!-- Robots (index + follow for demo; change if needed) -->
+    <meta name="robots" content="index,follow" />
+
+    <!-- Local Business / Restaurant Schema (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "SpiceRoute Kitchen",
+        "image": "https://www.spiceroutekitchen.vercel.app/og-image.jpg",
+        "@id": "https://www.spiceroutekitchen.vercel.app/",
+        "url": "https://www.spiceroutekitchen.vercel.app/",
+        "telephone": "+91-99999-00000",
+        "priceRange": "₹₹",
+        "servesCuisine": ["Indian", "North Indian", "Street Food", "Tandoori"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Near City Center Mall",
+          "addressLocality": "Vadodara",
+          "addressRegion": "Gujarat",
+          "postalCode": "390001",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 22.3072,
+          "longitude": 73.1812
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "11:00",
+            "closes": "23:00"
+          }
+        ]
+      }
+    </script>
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
